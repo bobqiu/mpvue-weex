@@ -1,0 +1,113 @@
+{
+  "pages": [{
+      "path": "pages/tabbar/index",
+      "style": {
+        "navigationBarTitleText": "首页",
+        "enablePullDownRefresh": true,
+        "navigationStyle": "custom"
+      }
+    },
+    // #ifdef H5
+    {
+      "path": "pages/diy/index",
+      "style": {
+        "navigationBarTitleText": "diy"
+      }
+    },
+    // #endif
+
+    {
+      "path": "pages/test1",
+      "style": {
+        "navigationBarTitleText": "测试一",
+        "enablePullDownRefresh": true
+      }
+    },
+
+    {
+      "path": "pages/tabbar/two",
+      "style": {
+        "navigationBarTitleText": "商城",
+        "enablePullDownRefresh": true,
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/tabbar/three",
+      "style": {
+        "navigationBarTitleText": "分类",
+        "enablePullDownRefresh": true,
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/tabbar/user",
+      "style": {
+        "navigationBarTitleText": "个人中心",
+        "enablePullDownRefresh": true,
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/index",
+      "style": {
+        "onReachBottomDistance": 20,
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
+    }
+
+  ],
+  "globalStyle": {
+    "navigationBarTitleText": "阿拉博数",
+    "navigationBarBackgroundColor": "#c81432",
+    "backgroundColor": "#F8F8F8"
+  },
+  "condition": {
+    "current": 0,
+    "list": [{
+        "name": "首页",
+        "path": "pages/tabbar/index"
+      },
+      {
+        "name": "会员中心",
+        "path": "pages/tabbar/user"
+      },
+      {
+        "name": "test1",
+        "path": "pages/test1"
+      }
+    ]
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": " #ff8329",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+        "pagePath": "pages/tabbar/index",
+        "text": "",
+        "iconPath": "static/tabbar/white.png",
+        "selectedIconPath": "static/tabbar/white.png"
+      },
+      {
+        "pagePath": "pages/tabbar/two",
+        "text": "",
+        "iconPath": "static/tabbar/white.png",
+        "selectedIconPath": "static/tabbar/white.png"
+      },
+      {
+        "pagePath": "pages/tabbar/three",
+        "text": "",
+        "iconPath": "static/tabbar/white.png",
+        "selectedIconPath": "static/tabbar/white.png"
+      },
+      {
+        "pagePath": "pages/tabbar/user",
+        "text": "",
+        "iconPath": "static/tabbar/white.png",
+        "selectedIconPath": "static/tabbar/white.png"
+      }
+    ]
+  }
+}

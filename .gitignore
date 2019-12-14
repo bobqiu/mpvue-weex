@@ -1,58 +1,55 @@
 .DS_Store
 node_modules/
+unpackage/
 dist/
+native/android/app/src/main/assets/apps/
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+*.log
 
 # Editor directories and files
-.idea
+.project
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
-/package-lock.json
+*.sw*
 
+# Lock files
+yarn.lock
+package-lock.json
 
-# app
-ip.txt
-
-.DS_Store
-*.iml
-
-# Android Studio
-.idea/
-local.properties
-.idea/
+# Gradle directory
 .gradle/
-
-
-# IOS
-# Xcode
-*/build/*
-*.pbxuser
-*.pbxprog
-!default.pbxuser
-*.mode1v3
-!default.mode1v3
-*.mode2v3
-!default.mode2v3
-*.perspectivev3
-!default.perspectivev3
-xcuserdata
-profile
-*.moved-aside
-DerivedData
 .idea/
-*.hmap
+build/
 
-#CocoaPods
-Pods
+# files for the dex VM
+*.dex
 
-*.xccheckout
-*.xcworkspacedata
-*.xcworkspace
-Podfile.lock
-# END IOS
+#built application files
+*.apk
+*.ap_
 
-src/router/routes.*
+# Java class files
+*.class
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+.idea/workspace.xml
+.idea/libraries
+.idea/gradle.xml
+.idea/misc.xml
+*.iml
+src/service/config.js
+
+/src/service/config.js
+src/service/config.js

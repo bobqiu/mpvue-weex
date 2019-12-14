@@ -1,21 +1,31 @@
 <template>
-  <x-page :pageInfo="pageInfo" v-if="pageInfo"></x-page>
+  <x-widget :option="option" ref="xWidget"></x-widget>
 </template>
 
 <script>
+
   export default {
     data () {
       return {
-        pageInfo: ''
+        option: {},
+        viewModel: '',
+        statusBarHeight: 0,
+        isNotIosApp: true
+      }
+    },
+    onLoad (option) {
+      if (this.$api.client() === 'WeChatLite') {
+        this.option = []
+        this.option.push(option)
+      } else {
+        this.option = option
       }
     },
     mounted () {
       this.init()
     },
     methods: {
-      async init () {
-        this.pageInfo = await this.$themeApi.pageInfo(this.$client, this.$route.path)
-        // console.info('页面信息', this.pageInfo)
+      init () {
       }
     }
   }

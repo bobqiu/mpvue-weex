@@ -1,28 +1,29 @@
 <template>
-  <div>
-    <zk-keyword></zk-keyword>
-  </div>
+  <view class="add">
+    <span class="i-name icon-topsearch">icon-topsearch</span>
+    <x-icon name="icon-upgrad"></x-icon>
+  </view>
 </template>
-
 <script>
   export default {
     data () {
       return {
-        pageInfo: ''
+        viewModel: {
+          name: '测试热源'
+        },
+        viewModel2: {}
       }
     },
     mounted () {
       this.init()
     },
     methods: {
-      async init () {
-        console.info('test1')
-        // this.pageInfo = await this.$themeApi.pageInfo(this.$client, this.$route.path)
+      init () {
+        this.$api.vuexLocalSet('test343434', this.viewModel)
       }
     }
   }
 </script>
-<style >
+<style lang="scss" scoped>
+  @import "@/assets/border/styles/index.scss";
 </style>
-
-
